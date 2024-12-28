@@ -138,6 +138,7 @@ const authCtrl = {
   },
 
   login: async (req, res) => {
+    console.log(req.body);
     try {
       const { email, password } = req.body;
 
@@ -174,6 +175,7 @@ const authCtrl = {
         },
       });
     } catch (err) {
+      console.log(err.message);
       return res.status(500).json({ msg: err.message });
     }
   },

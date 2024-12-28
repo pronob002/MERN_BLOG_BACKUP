@@ -53,7 +53,7 @@ mongoose.connect(URI, {
     console.log("Database Connected!!")
 })
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 http.listen(port, () => {
   console.log("Listening on ", port);
 });
